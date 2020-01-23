@@ -80,7 +80,7 @@ class ABI_GIntM(ABIType):
 #   and language typing. For computing the function selector, address is used.
 class ABI_Address(ABI_GIntM):
     def __init__(self):
-        return super().__init__(160, False)
+        super().__init__(160, False)
 
     def selector_name(self):
         return 'address'
