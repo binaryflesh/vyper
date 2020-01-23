@@ -153,7 +153,7 @@ class ABI_BytesM(ABIType):
 # Encoded identical to bytes24.
 class ABI_Function(ABI_BytesM):
     def __init__(self):
-        return super().__init__(24)
+        super().__init__(24)
 
     def selector_name(self):
         return 'function'
