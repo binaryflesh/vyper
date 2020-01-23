@@ -92,7 +92,7 @@ class ABI_Address(ABI_GIntM):
 #  1, i.e. that 248 bits or 255 bits are zeroed? - CC 20191119)
 class ABI_Bool(ABI_GIntM):
     def __init__(self):
-        return super().__init__(8, False)
+        super().__init__(8, False)
 
     def selector_name(self):
         return 'bool'
